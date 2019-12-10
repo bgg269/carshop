@@ -5,7 +5,6 @@ import Button from '@material-ui/core/Button';
 import Snackbar from '@material-ui/core/Snackbar';
 import Addcar from './Addcar';
 import Editcar from './Editcar';
-import { CSVLink } from "react-csv";
 import Grid from '@material-ui/core/Grid';
 
 const Carlist = () => {
@@ -111,7 +110,6 @@ const Carlist = () => {
           <Addcar saveCar={saveCar} />      
       </Grid>
       <Grid style={{padding: 15}} item>
-      <CSVLink data={cars}>Export data</CSVLink>
       </Grid>
       </Grid>
       <ReactTable filterable={true} columns={columns} data={cars}/>
